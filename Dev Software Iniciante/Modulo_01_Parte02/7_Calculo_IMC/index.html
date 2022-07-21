@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel = "stylesheet" href="index.css">
+<script src = "index.js"> </script>
+
+    <head>
+        <title>Cálculo do IMC</title>
+        <meta charset = "utf-8">
+    </head>
+
+    <body class = "centralizar">
+
+        <h1>Cálculo do IMC</h1>
+
+        <h2>Digite sua altura e peso nos campos abaixo:</h2>
+    <div class = "margem">
+        <label class = "fonte" for = "altura">Altura</label>
+        <input id = "altura" class = "input" type = "number" step ="0.10">    
+    </div>
+
+    <div class = "margem">
+        <label class = "fonte" for = "peso">Peso</label>
+        <input id = "peso" class = "input" type = "number" step = "0.10">       
+    </div>
+
+    <div>
+        <button class = "botao" onclick = "calcularIMC()">Calcular</button>
+        <button class = "botao" onclick = "limpar()">limpar</button>   
+    </div>   
+
+    <p id = "resultado"></p>
+    <p id = "descricaoResultado" class = "resultado"></p> 
+
+
+    </body>
+
+</html>

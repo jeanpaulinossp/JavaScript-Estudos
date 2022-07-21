@@ -1,0 +1,20 @@
+/*Esse media tem a função de fazer com que o menu vá para baixo do logo quando a tela fica muito pequen*/
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .botao {
+        margin-top: 2px;
+        width: 120px;
+        height: 60px;
+        padding: 1px 1px;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .descricao {
+        width: 50%;
+    }
+}

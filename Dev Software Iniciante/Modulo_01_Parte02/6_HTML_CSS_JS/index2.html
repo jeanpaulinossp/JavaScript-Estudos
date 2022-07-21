@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Página 2</title>
+        <meta charset="utf-8">
+    </head>
+    
+    <body> 
+     
+        <p class = "paragrafo" id = "paragrafo1">Esse é um parágrafo!</p>
+        <button 
+            type = "button" 
+            onclick="document.getElementById('paragrafo1').style.visibility = 'hidden'">
+            Esconder parágrafo
+        </button>
+        
+        <button 
+            type = "button" 
+            onclick="document.getElementById('paragrafo1').style.visibility = 'visible'">
+            Mostrar parágrafo
+        </button>
+
+    <button
+        type = "button"
+        onclick = "trocaCor ()">Trocar cor
+    </button>
+
+    <button
+    type = "button"
+    onclick = "trocaCor ('blue')">Trocar cor
+    </button>
+
+
+    <script> 
+        var p = document.getElementById ('paragrafo1');
+        p.style.color = "red";
+        p.style.fontWeight = "bold";
+        p.style.fontSize = "30px"
+
+        function trocaCor (cor) {
+            document.getElementById ('paragrafo1').color = "cor";
+        }
+    </script>
+
+    <button css.color = "blue">
+        cetadoido
+    </button>
+
+    </body>
+
+</html>

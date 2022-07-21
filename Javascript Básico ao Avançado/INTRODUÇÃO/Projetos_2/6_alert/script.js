@@ -1,0 +1,1 @@
+alert ("Não FECHE essa JANELA, se fechar nunca mais irá abri-la novamente!")

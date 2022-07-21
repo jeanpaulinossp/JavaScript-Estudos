@@ -1,0 +1,33 @@
+.centralizar {
+    text-align: center;
+}
+
+.margem {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fonte {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input {
+    font-size: 18px;
+    border: solid 2px;
+    border-radius: 7px;
+}
+
+.botao {
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background: #24525f;
+}
+
+.resultado {
+    font-size: 40px;
+    color: darkblue;
+}

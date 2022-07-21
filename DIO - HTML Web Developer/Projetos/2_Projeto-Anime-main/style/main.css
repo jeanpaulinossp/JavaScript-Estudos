@@ -1,0 +1,114 @@
+:root { /* O root é usado para declarar variaveis dentro do CSS*/
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* { /*Essa configuração é feita para resetar a formatação padrão dos navegadores*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body {
+    background: var(--preta); /*Puxando a variável declara*/
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex; /*Display Flex alinha os elementos em tela, jogando tudo pra mesma linha */
+    flex-direction: row; /**/
+    align-items: center; /*Alinha os itens ao centro verticalmente*/
+    justify-content: space-between; /*Da um espaço entre uma tag e outra*/
+}
+
+header .logo {
+    margin-left: 5px; /*Da um distanciamento entre uma texto e outro*/
+    color: var(--vermelho);
+    font-family: 'Arial Back', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px; /*Da um distanciamento entre um texto e outro*/
+}
+
+header nav a:hover { /*hover faz com que um efeito especifico aconteça quando se passa o mouse sobre o texto ou imagem*/
+    color: #fff;
+}
+
+/*anime principal*/
+
+.anime-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)100%), url('/img-Mangas/Capa.jpg') no-repeat center;
+
+    height: 400px;
+    width: auto;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.anime-principal .descricao {
+    margin-top: 1%;
+    margin-bottom: 15px;
+}
+
+.anime-principal .titulo {
+    margin-top: 10%;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,0.50) ;
+    border: none;
+    color: white;
+
+    padding: 15px 15px; /*1° valor espaço de cima e 2° valor espaço de lado*/
+    margin-right: 15px; /*espaçamento entre os botoes*/
+    font-size: 12px;
+
+    cursor: pointer; /*Quando passar o mouse encima a setinha vira a maozinha o que mostra para o usuário que aquilo é um link*/
+    transition: .3s ease all; /*criar um tempo para que a animação criada no botão ao passar o mouse encima apareça*/
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.anime-principal .container {
+    width: 70%;
+}
+
+.box-anime {
+    height: 100%;
+    width: 100%;
+    display: block;
+} 
+
+.carrossel-animes {
+    margin-top: 5px;
+
+}
+
+.botoes {
+    display: flex;
+}
