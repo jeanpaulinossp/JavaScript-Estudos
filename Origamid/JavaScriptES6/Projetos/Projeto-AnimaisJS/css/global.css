@@ -284,6 +284,12 @@ img {
     grid-column: 1;
   }
 
+  .login {
+    margin-right: inherit;
+    position: inherit;
+    right: inherit;
+  }
+
   .grid-section {
     grid-template-columns: 100px 1fr;
     gap: 10px;
