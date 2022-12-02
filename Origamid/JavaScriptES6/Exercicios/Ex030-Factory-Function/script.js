@@ -52,7 +52,6 @@ const btns = $$("button");
 console.log(btns.hide().show());
 
 function handleClick(event) {
-  console.log(event.target);
   btns.addClass("active");
 }
 
