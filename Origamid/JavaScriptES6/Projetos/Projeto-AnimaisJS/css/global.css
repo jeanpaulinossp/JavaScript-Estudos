@@ -234,20 +234,20 @@ img {
   }
 }
 
-.js [tab-anime="accordion"] dd {
+.js [data-anime="accordion"] dd {
   display: none;
 }
 
-[tab-anime="accordion"] dt::after {
+[data-anime="accordion"] dt::after {
   content: "↴";
   margin-left: 10px;
 }
 
-[tab-anime="accordion"] dt.ativo::after {
+[data-anime="accordion"] dt.ativo::after {
   content: "⬏";
 }
 
-[tab-anime="accordion"] dd.ativo {
+[data-anime="accordion"] dd.ativo {
   display: block;
   animation: slideDown 0.5s forwards;
 }

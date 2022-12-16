@@ -1,28 +1,33 @@
 // scroll suave ao clicar nos links internos
-export default function initScrollSuave() {
-  const linksInternos = document.querySelectorAll(
-    '[data-menu="suave"] a[href^="#"]'
-  );
+export default class ScrollSuave {
+  constructor(links, options) {
+    this.linksInternos = document.querySelectorAll(links);
+    if (options === undefined) {
+      this.options = { behavior: "smooth", block: "start" };
+    } else {
+      this.options = options;
+    }
+    // o bind retorna o this como callback
+    this.scrollToSelection = this.scrollToSelection.bind(this);
+  }
 
-  function scrollToSelection(event) {
+  scrollToSelection(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
-
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-
-    // forma alternativa
-    // const topo = section.offsetTop;
-    // window.scrollTo({
-    //   top: topo,
-    //   behavior: 'smooth',
-    // }); // função que faz um scroll do site ( eixo x < > e eixo y \/ /\ )
+    section.scrollIntoView(this.options);
   }
 
-  linksInternos.forEach((link) => {
-    link.addEventListener("click", scrollToSelection);
-  });
+  addLinkEvent() {
+    this.linksInternos.forEach((link) => {
+      link.addEventListener("click", this.scrollToSelection);
+    });
+  }
+
+  init() {
+    if (this.linksInternos.length) {
+      this.addLinkEvent();
+    }
+    return this;
+  }
 }
