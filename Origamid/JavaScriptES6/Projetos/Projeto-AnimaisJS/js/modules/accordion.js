@@ -7,7 +7,7 @@ export default class Accordion {
 
   toggleAccordion(item) {
     item.classList.toggle(this.activeClass);
-    console.log(item); // adiciona a classe ativo na tag dt que esta sendo selecionada acima
+    // adiciona a classe ativo na tag dt que esta sendo selecionada acima
     item.nextElementSibling.classList.toggle(this.activeClass); // adiciona a classe ativo ao próximo elemento depois do dt (tag dd)
   }
 
